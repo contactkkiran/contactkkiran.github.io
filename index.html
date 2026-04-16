@@ -1,35 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kiran Portfolio</title>
-  <style>
-    body { font-family: Arial; background:#0f172a; color:white; text-align:center; }
-    .card { background:#1e293b; padding:20px; margin:20px; border-radius:10px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiran Kanumuri | Portfolio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e2e8f0;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+h1 { font-size: 42px; margin-bottom: 10px; }
+h2 { color: #38bdf8; margin-bottom: 10px; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: rgba(30,41,59,0.7);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.skills span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Kiran Kanumuri</h1>
-<h2>Automation Engineer | AI Test Innovator</h2>
+<header>
+  <h1>Kiran Kanumuri</h1>
+  <h2>Automation Engineer | AI Test Innovator</h2>
+  <p>Building AI-driven automation frameworks using LLM, RAG, and Claude API</p>
 
-<div class="card">
-<h3>🚀 Skills</h3>
-<p>Playwright | Selenium | API | LLM | RAG | Claude API</p>
-</div>
+  <!-- Update resume.pdf after uploading -->
+  <a class="btn" href="resume.pdf" target="_blank">📄 Download Resume</a>
+</header>
 
-<div class="card">
-<h3>📂 Projects</h3>
-<p>AI Automation Framework</p>
-<p>API Automation</p>
-<p>Playwright POM</p>
-</div>
+<section>
+  <h2>🚀 Skills</h2>
+  <div class="card skills">
+    <span>Java</span>
+    <span>TypeScript</span>
+    <span>Python</span>
+    <span>Playwright</span>
+    <span>Selenium</span>
+    <span>API Testing</span>
+    <span>Rest Assured</span>
+    <span>Azure</span>
+    <span>AWS</span>
+    <span>LLM</span>
+    <span>RAG</span>
+    <span>Claude API</span>
+    <span>Prompt Engineering</span>
+  </div>
+</section>
 
-<div class="card">
-<h3>📫 Contact</h3>
-<p>Email: yourmail@gmail.com</p>
-</div>
+<section>
+  <h2>🤖 AI Innovation</h2>
+  <div class="card">
+    <p>
+      Creator of <b>AIDLC-Q</b> framework integrating GenAI & Agentic AI into SDLC.
+      Focused on next-generation AI-driven automation.
+    </p>
+    <a href="https://github.com/contactkkiran/aidlc-q-framework" target="_blank">
+        🔗 View Project
+      </a>
+  </div>
+</section>
+
+<section>
+  <h2>📂 Projects</h2>
+  <div class="projects">
+
+    <div class="project-card">
+      <h3>🤖 Synthetic Data Generation using LLM</h3>
+      <p>
+        Developed a concept for generating synthetic test data using Large Language Models (LLM),
+        enabling realistic and dynamic datasets for automation and AI validation.
+      </p>
+
+      <p>
+        <b>Key Highlights:</b><br>
+        • LLM-based data generation<br>
+        • Dynamic API/UI payload creation<br>
+        • Improved test coverage<br>
+        • Reduced dependency on static data
+      </p>
+
+      <p><b>Tech:</b> LLM | Prompt Engineering | AI Testing</p>
+
+      <a href="https://github.com/contactkkiran/Synthetic_Data_Generation-using-LLMModel" target="_blank">
+        🔗 View Project
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>📫 Contact</h2>
+  <div class="card">
+    <p>Email: contactkkiran@gmail.com</p>
+
+    <p>
+      GitHub:
+      <a href="https://github.com/contactkkiran" target="_blank">
+        github.com/contactkkiran
+      </a>
+    </p>
+
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/kirankanumuri/" target="_blank">
+        linkedin.com/in/kirankanumuri
+      </a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Kiran Kanumuri</p>
+</footer>
 
 </body>
 </html>
